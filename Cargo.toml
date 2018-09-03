@@ -1,10 +1,10 @@
 [package]
 name = "slog-syslog5424"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Mackenzie Hauck <mhauck@live.ca>"]
 description = "RFC5424 implementation for slog"
-homepage = "https://github.com/nocduro/syslog5424"
-repository = "https://github.com/nocduro/syslog5424"
+homepage = "https://github.com/nocduro/slog-syslog5424"
+repository = "https://github.com/nocduro/slog-syslog5424"
 readme = "Readme.md"
 keywords = ["slog", "syslog", "rfc5424", "5424", "5425"]
 categories = ["development-tools::debugging"]
