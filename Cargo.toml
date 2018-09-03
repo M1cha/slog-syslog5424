@@ -1,0 +1,9 @@
+[package]
+name = "slog-syslog5424"
+version = "0.1.0"
+authors = ["Mackenzie Hauck <mhauck@live.ca>"]
+
+[dependencies]
+slog = "2.3"
+chrono = "0.4"
+syslog5424 = { path = "../syslog5424" }
