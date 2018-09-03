@@ -1,4 +1,5 @@
 # `slog-syslog5424` - implementation of RFC5424 for `slog`
+[![crates.io badge](https://img.shields.io/crates/v/slog-syslog5424.svg)](https://crates.io/crates/slog-syslog5424)
 
 This crate provides a way for [`slog`](https://github.com/slog-rs/slog) to format its structured messages into the syslog 5424 format which preserves structure.
 The output is written to a type provided by the user that implements the `Write` trait.
