@@ -53,9 +53,16 @@ impl<W: Write> Rfc5424Writer<W> {
 /// Wrapper struct to store all the information provied by `slog`
 /// for each log message. This way we can implement the trait
 /// required for RFC5424 formatting on it
-struct CompleteLogEntry<'a> {
+pub struct CompleteLogEntry<'a> {
     record: &'a Record<'a>,
     values: &'a OwnedKVList,
+}
+
+impl<'a> CompleteLogEntry<'a> {
+    /// Create a new `CompleteLogEntry` which implements `syslog5424::Rfc5424Data`
+    pub fn new(record: &'a Record<'a>, values: &'a OwnedKVList) -> Self {
+        Self { record, values }
+    }
 }
 
 /// Wrapper for a vec so that we can implement `Serializer` on it.
